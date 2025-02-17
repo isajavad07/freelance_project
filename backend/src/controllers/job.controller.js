@@ -41,7 +41,7 @@ const viewJob = async (req, res) => {
 
 const deleteJob = async (req, res) => {
     try {
-        const { id } = req.body;
+        const { id } = req.params;
         const job = await Job.findByIdAndDelete(id);
         if (job) {
             res.status(200).json({ message: 'Job deleted successfully' });
