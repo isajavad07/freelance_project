@@ -19,6 +19,7 @@ const ViewJobs = () => {
 
     fetchJob();
     }, []);
+    
   return (
     <>
         <Navbar />

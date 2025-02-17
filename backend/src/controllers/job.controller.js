@@ -25,6 +25,20 @@ const viewJobs = async (req, res) => {
     }
 }
 
+const viewJob = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const job = await Job.findById(id);
+        if (job) {
+            res.status(200).json(job);
+        } else {
+            res.status(404).json({ message: 'Job not found' });
+        }
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+}
+
 const deleteJob = async (req, res) => {
     try {
         const { id } = req.body;
@@ -43,5 +57,6 @@ const deleteJob = async (req, res) => {
 module.exports = {
     createJob,
     viewJobs,
+    viewJob,
     deleteJob,
 };

@@ -21,15 +21,6 @@ const Home = () => {
 
     fetchJob();
     }, []);
-  // useEffect(() => {
-  //   const fetchJob = async () => {
-  //     const res = await fetch('http://localhost:8000/Jobs');
-  //     const data = await res.json();
-  //     setJob(data);
-  //   };
-
-  //   fetchJob();
-  // }, []);
 
   const recentJobs = job.slice(0,3);
 

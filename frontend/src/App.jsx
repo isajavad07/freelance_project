@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Company from './pages/Company'
 import PostJob from './pages/PostJob'
 import ViewJobs from './pages/ViewJobs'
+import Job from './pages/Job'
 import Dashboard from './pages/Dashboard'
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='/company' element={<Company />}></Route>
           <Route path='/postjob' element={<PostJob />}></Route>
           <Route path='/jobs' element={<ViewJobs />}></Route>
+          <Route path='/job/:jobId' element={<Job />}></Route>
           <Route path='/dashboard' element={<Dashboard />}></Route>
         </Routes>
       </Router>

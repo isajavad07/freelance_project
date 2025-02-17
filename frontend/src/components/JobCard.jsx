@@ -14,7 +14,7 @@ const JobCard = ( {job} ) => {
   }
 
   const viewJob = () => {
-    navigate(`/job/${job.title}`);
+    navigate(`/job/${job._id}`);
   }
   return (
     <>
@@ -25,6 +25,7 @@ const JobCard = ( {job} ) => {
             <button onClick={() => setshowFullDesc((prev) => !prev)} 
             className="text-indigo-500 mb-5 hover:text-indigo-600 cursor-pointer">{ showFullDesc ? 'Show Less' : 'Show More' }
             </button>
+            <div className='text-lg font-medium mb-5 text-gray-800'>Budget: ${job.budget}</div>
             <div className="pb-2">
                 Tags:
                 <span className='p-1 container border rounded-lg bg-green-300'>#Graphics</span>
