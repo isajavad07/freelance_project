@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <>
         <Navbar />
-        <div className='p-10'>
+        <div className='p-10 bg-gray-100'>
             <div className='container w-fit bg-gray-200 border rounded-2xl shadow-sm'>
             <div className='p-4 text-6xl font-semibold text-center text-indigo-600 shadow-lg'>Become a Freelancer Today</div>
               <div className='grid grid-cols-2 w-fit p-4 gap-4'>
@@ -51,7 +51,7 @@ const Home = () => {
             </div>
         </div>
 
-        <div className='p-10 pt-3'>
+        <div className='p-10 pt-3 bg-gray-100'>
             <div className='container w-fit bg-gray-200 border rounded-2xl shadow-sm'>
             <div className='p-4 text-6xl font-semibold text-center text-indigo-600 shadow-lg'>Latest Jobs</div>
               <div className='grid w-fit grid-cols-1 lg:grid-cols-3 gap-4 p-4'>

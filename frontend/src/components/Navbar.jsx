@@ -14,6 +14,9 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex items-center space-x-6">
+            <Link to="/postJob" className="text-xl text-blue-600 dark:text-blue-500 hover:underline">
+                Post a Job
+            </Link>
             <Link to="/register" className="text-xl text-blue-600 dark:text-blue-500 hover:underline">
                 Register
             </Link>
