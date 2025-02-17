@@ -28,7 +28,7 @@ const Job = () => {
         <div className='p-10'>
             <Link to='/jobs' className='flex text-2xl font-semibold text-blue-500 items-center gap-2'><BiArrowBack />Back to Jobs</Link>
             <div className='container bg-gray-100 p-4 rounded-2xl shadow-lg'>
-                <div className='text-2xl font-semibold mb-3'>{job.title}</div>
+                <div className='text-2xl font-semibold mb-3 shadow-sm'>{job.title}</div>
                 <div className='text-lg font-medium text-gray-800'>{job.description}</div>
                 <div className='text-lg font-medium mb-5 text-gray-800'>Budget: ${job.budget}</div>
                 <div className="pb-2">
